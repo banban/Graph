@@ -26,8 +26,8 @@ namespace DBGraph.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SVRADLDB02;Initial Catalog=Nova_Datamart;Integrated Security=True;Con" +
-            "nect Timeout=180")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\EXPRESS2014;Initial Catalog=AdventureWorks2014;Integrated Security=" +
+            "True;Connect Timeout=180")]
         public string DBConnectionString {
             get {
                 return ((string)(this["DBConnectionString"]));
@@ -36,7 +36,7 @@ namespace DBGraph.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Temp\\SQLJobs.graphml")]
+        [global::System.Configuration.DefaultSettingValueAttribute(".\\Dependencies.graphml")]
         public string YedOutputFilePath {
             get {
                 return ((string)(this["YedOutputFilePath"]));
@@ -48,8 +48,7 @@ namespace DBGraph.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("exec [rs].[GetGraphData] @EntityType=\'JobDependencies\', @Url = \'http://reports.no" +
-            "vagroup.com.au/{0}\'")]
+        [global::System.Configuration.DefaultSettingValueAttribute("exec [dbo].[GetGraphData] @EntityType=\'FKDependencies\'")]
         public string Request {
             get {
                 return ((string)(this["Request"]));
